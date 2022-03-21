@@ -1,0 +1,71 @@
+<div class="col-sm-12 content" *ngIf="userMessage" [ngStyle]="{marginTop: userMessage.sameUsr ? '0px' : '12px'}">
+<!--  left side-->
+  <ng-container *ngIf="!userMessage.thisUser">
+    <div class="col-sm-12 text-center" *ngIf="!userMessage.sameday"><span class="date ">{{userMessage.datetime?.date | labelChange}}</span></div>
+    <div class="col-sm-12 text-left">
+    <span class="arrow-left">
+      <svg viewBox="0 0 8 13" width="8" height="13" class=""><path opacity=".13" fill="#0000000" d="M1.533 3.568 8 12.193V1H2.812C1.042 1 .474 2.156 1.533 3.568z"></path><path fill="currentColor" d="M1.533 2.568 8 11.193V0H2.812C1.042 0 .474 1.156 1.533 2.568z"></path></svg>
+    </span>
+      <span class="message-left" (mouseover)="ismouseover = true" (mouseleave)="ismouseover = false">
+        <sapn>{{userMessage.text}}</sapn>
+        <span class="ml-time" (mouseover)="ismouseover = true" (mouseleave)="ismouseover = false">{{userMessage.datetime.time}}</span>
+        <span class="toggle-cont">
+            <mat-menu #menu4="matMenu" xPosition="after" [id]="userMessage.id">
+              <button mat-menu-item>
+                <span>Reply</span>
+              </button>
+              <button mat-menu-item>
+                <span>Forward message</span>
+              </button>
+              <button mat-menu-item>
+                <span>Srat message</span>
+              </button>
+              <button mat-menu-item>
+                <span>Delete message</span>
+              </button>
+            </mat-menu>
+
+            <button mat-icon-button [ngStyle]="{visibility: (ismouseover) ? 'visible' : 'hidden'}">
+              <svg [matMenuTriggerFor]="menu4" viewBox="0 0 15 15" width="15" height="15" class=""><path fill="currentColor" d="M3.3 4.6 9 10.3l5.7-5.7 1.6 1.6L9 13.4 1.7 6.2l1.6-1.6z"></path></svg>
+            </button>
+          </span>
+      </span>
+    </div>
+  </ng-container>
+
+<!--  right side-->
+  <ng-container *ngIf="userMessage.thisUser">
+    <div class="col-sm-12 text-center" *ngIf="!userMessage.sameday"><span class="date ">{{userMessage.datetime?.date | labelChange}}</span></div>
+    <div class="col-sm-12 text-right">
+      <span class="message-right" (mouseover)="ismouseover = true" (mouseleave)="ismouseover = false">
+        <sapn>{{userMessage.text}}</sapn>
+        <span class="mr-time" *ngIf="!ismouseover">{{userMessage.datetime.time}}</span>
+
+        <span class="toggle-cont">
+            <mat-menu #menu4="matMenu" xPosition="after" [id]="userMessage.id">
+              <button mat-menu-item>
+                <span>Reply</span>
+              </button>
+              <button mat-menu-item>
+                <span>Forward message</span>
+              </button>
+              <button mat-menu-item>
+                <span>Srat message</span>
+              </button>
+              <button mat-menu-item>
+                <span>Delete message</span>
+              </button>
+            </mat-menu>
+
+            <button mat-icon-button [ngStyle]="{visibility: (ismouseover) ? 'visible' : 'hidden'}">
+              <svg [matMenuTriggerFor]="menu4" viewBox="0 0 15 15" width="15" height="15" class=""><path fill="currentColor" d="M3.3 4.6 9 10.3l5.7-5.7 1.6 1.6L9 13.4 1.7 6.2l1.6-1.6z"></path></svg>
+            </button>
+          </span>
+      </span>
+      <span class="arrow-right">
+      <svg viewBox="0 0 8 13" width="8" height="13" class=""><path opacity=".13" d="M5.188 1H0v11.193l6.467-8.625C7.526 2.156 6.958 1 5.188 1z"></path><path fill="currentColor" d="M5.188 0H0v11.193l6.467-8.625C7.526 1.156 6.958 0 5.188 0z"></path></svg>
+    </span>
+    </div>
+  </ng-container>
+
+</div>

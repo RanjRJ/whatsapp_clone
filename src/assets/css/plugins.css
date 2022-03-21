@@ -1,0 +1,24 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Lifest - Insurance Agency HTML Template
+    Description: Insurance Agency HTML Template
+    Author: Website Design Templates
+    Version: 2.0
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			[ All CSS Plugins & Default Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("plugins/bootstrap.min.css");
+
+/* == animate Headline == */
+@import url("plugins/animate.css");
+
+/* == fontawesome icon font == */
+@import url("plugins/fontawesome-all.min.css");
+
+/* == default classes == */
+@import url("plugins/default.css");

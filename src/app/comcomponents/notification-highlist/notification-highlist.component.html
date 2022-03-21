@@ -1,0 +1,61 @@
+
+  <div class="col-sm-12 user-message" *ngIf="userData" (mouseover)="ismouseover = true" (mouseleave)="ismouseover = false">
+    <div class="notiicsec">
+      <button mat-icon-button >
+        <img [src]="userData.image" width="48" height="48">
+      </button>
+    </div>
+    <div class="notiaccsec">
+      <div class="gnnm">
+        <div class="row">
+
+          <div class="col-sm-9 username" [ngClass]="{'isreadHdr': userData.read, 'isunreadHdr': !userData.read}" >{{userData.header}}</div>
+          <div class="col-sm-3 datetime" [ngStyle]="{'color': (userData.read) ? '#667781' : '#1fa855'}"> {{userData.datetime?.value}} </div>
+        </div>
+      </div>
+      <div class="todn">
+        <div class="row">
+          <div class="col-sm-9 user-message" [ngClass]="{'isreadMsg': userData.read, 'isunreadMsg': !userData.read}">
+            <span *ngIf="userData.delivered">
+              <svg viewBox="0 0 18 18" width="18" height="18" class="viewed_icon"><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg>
+            </span>
+            <span>{{userData.text}}</span>
+          </div>
+          <div class="col-sm-3 count" *ngIf="userData.badchCount > 0 && !ismouseover">
+            <span class="badge badge-success">2</span>
+          </div>
+
+          <div class="col-sm-3 count" [ngStyle]="{visibility: (ismouseover) ? 'visible' : 'hidden'}">
+            <mat-menu #menu4="matMenu" xPosition="after" [id]="userData.id">
+              <button mat-menu-item>
+                <span>Archive chat</span>
+              </button>
+              <button mat-menu-item>
+                <span>Mute notifications</span>
+              </button>
+              <button mat-menu-item>
+                <span>Delete chat</span>
+              </button>
+              <button mat-menu-item>
+                <span>Pin chat</span>
+              </button>
+              <button mat-menu-item>
+                <span>Mark as unread</span>
+              </button>
+            </mat-menu>
+
+            <button mat-icon-button [matMenuTriggerFor]="menu4">
+              <svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="M3.3 4.6 9 10.3l5.7-5.7 1.6 1.6L9 13.4 1.7 6.2l1.6-1.6z"></path></svg>
+            </button>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+

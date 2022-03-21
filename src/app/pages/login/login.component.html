@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-sm-12  p-5 quform-elements" [formGroup]="loginData">
+    <div class="row">
+      <div class="col-sm-12 pb-2">
+        <h5 class="text-center">Login</h5>
+        <p class="quform-required failed-error-msg">{{errorMessage}}</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <div class="quform-element">
+          <label for="username">Your Email <span class="quform-required">*</span></label>
+          <div class="quform-input">
+            <input class="form-control" id="username" type="text" name="username" placeholder="Your email here" formControlName="username" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <div class="quform-element">
+          <label for="password">Your Password <span class="quform-required">*</span></label>
+          <div class="quform-input">
+            <input class="form-control" id="password" type="password" name="password" placeholder="Your password here" formControlName="password" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pb-2">
+      <div class="col-md-12">
+        <!--        <div class="bd-example mb-2">-->
+        <button class="btn btn-sm btn-success col-sm-12" id="loginBtn" (click)="login()" ><span *ngIf="!pageIsLoading">Login</span> <span *ngIf="pageIsLoading"><i class="fa fa-spinner fa-spin"></i></span></button>
+        <!--        </div>-->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 ">
+        <a class="cursor-pointer font12" (click)="forgotPassword()">Forgot password</a>
+      </div>
+      <div class="col-md-6 text-right">
+        <a class="cursor-pointer font12" (click)="checkBoxUpdate()"><input type="checkbox" [value]="loginData.get('rememberMe').value" formControlName="rememberMe"> Remember me</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+

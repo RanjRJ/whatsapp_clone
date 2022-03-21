@@ -1,0 +1,10 @@
+{
+  "/api/*": {
+    "target": "http://test.ensurtek.com:8500/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
+
+

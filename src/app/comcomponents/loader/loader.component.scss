@@ -1,0 +1,33 @@
+.page-loader
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  background-color: #f0f2f5;
+
+  .row {
+    .loader-cont {min-width: 400px}
+  }
+}
+
+.logo {
+  color: #bbc5cb;
+  z-index: 1;
+}
+
+.progress-bar {
+  color: #e9edef;
+  //background-color: #d6d7d9;
+}
+
+.description {
+  color: #8696a0;
+  font-size: 11px;
+}

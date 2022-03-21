@@ -1,0 +1,234 @@
+<app-loader *ngIf="userStatus == userStatuses.PLG"></app-loader>
+
+<div class="row inner-container" *ngIf="userStatus == userStatuses.UNL">
+  <div class="col-sm-12 login-contents">
+    <div class="top-bg"></div>
+    <div class="sub-inner-content col-sm-12 col-lg-6 offset-lg-3">
+      <div class="row ">
+        <div class="col-sm-12 intro-logo" >
+          <svg xmlns="http://www.w3.org/2000/svg"  width="39" height="39" viewBox="0 0 39 39"><path fill="#00E676" d="M10.7 32.8l.6.3c2.5 1.5 5.3 2.2 8.1 2.2 8.8 0 16-7.2 16-16 0-4.2-1.7-8.3-4.7-11.3s-7-4.7-11.3-4.7c-8.8 0-16 7.2-15.9 16.1 0 3 .9 5.9 2.4 8.4l.4.6-1.6 5.9 6-1.5z"></path><path fill="#FFF" d="M32.4 6.4C29 2.9 24.3 1 19.5 1 9.3 1 1.1 9.3 1.2 19.4c0 3.2.9 6.3 2.4 9.1L1 38l9.7-2.5c2.7 1.5 5.7 2.2 8.7 2.2 10.1 0 18.3-8.3 18.3-18.4 0-4.9-1.9-9.5-5.3-12.9zM19.5 34.6c-2.7 0-5.4-.7-7.7-2.1l-.6-.3-5.8 1.5L6.9 28l-.4-.6c-4.4-7.1-2.3-16.5 4.9-20.9s16.5-2.3 20.9 4.9 2.3 16.5-4.9 20.9c-2.3 1.5-5.1 2.3-7.9 2.3zm8.8-11.1l-1.1-.5s-1.6-.7-2.6-1.2c-.1 0-.2-.1-.3-.1-.3 0-.5.1-.7.2 0 0-.1.1-1.5 1.7-.1.2-.3.3-.5.3h-.1c-.1 0-.3-.1-.4-.2l-.5-.2c-1.1-.5-2.1-1.1-2.9-1.9-.2-.2-.5-.4-.7-.6-.7-.7-1.4-1.5-1.9-2.4l-.1-.2c-.1-.1-.1-.2-.2-.4 0-.2 0-.4.1-.5 0 0 .4-.5.7-.8.2-.2.3-.5.5-.7.2-.3.3-.7.2-1-.1-.5-1.3-3.2-1.6-3.8-.2-.3-.4-.4-.7-.5h-1.1c-.2 0-.4.1-.6.1l-.1.1c-.2.1-.4.3-.6.4-.2.2-.3.4-.5.6-.7.9-1.1 2-1.1 3.1 0 .8.2 1.6.5 2.3l.1.3c.9 1.9 2.1 3.6 3.7 5.1l.4.4c.3.3.6.5.8.8 2.1 1.8 4.5 3.1 7.2 3.8.3.1.7.1 1 .2h1c.5 0 1.1-.2 1.5-.4.3-.2.5-.2.7-.4l.2-.2c.2-.2.4-.3.6-.5s.4-.4.5-.6c.2-.4.3-.9.4-1.4v-.7s-.1-.1-.3-.2z"></path></svg>
+          <span class="wtapp-web-text">WhatsApp Web</span>
+        </div>
+      </div>
+
+      <div class="row h-100">
+        <div class="col-sm-12 pt-3 pb-2 p-lg-10">
+          <div class="card">
+            <div class="card-body">
+              <div class="row p-5">
+                <div class="col-md-8 h-100">
+                  <div class="intro-use mb-4 col-sm-12">To use WhatsApp on your computer:</div>
+                  <div class="col-sm-12 pb-2">
+                    <ol>
+                      <li class="intro-list">Open WhatsApp on your phone</li>
+                      <li class="intro-list">
+                        Tap
+                        <strong>Menu </strong>
+                        <svg height="24px" viewBox="0 0 24 24" width="24px"><rect fill="#f2f2f2" height="24" rx="3" width="24"></rect><path d="m12 15.5c.825 0 1.5.675 1.5 1.5s-.675 1.5-1.5 1.5-1.5-.675-1.5-1.5.675-1.5 1.5-1.5zm0-2c-.825 0-1.5-.675-1.5-1.5s.675-1.5 1.5-1.5 1.5.675 1.5 1.5-.675 1.5-1.5 1.5zm0-5c-.825 0-1.5-.675-1.5-1.5s.675-1.5 1.5-1.5 1.5.675 1.5 1.5-.675 1.5-1.5 1.5z" fill="#818b90"></path></svg>
+                        or
+                        <strong>Settings </strong>
+                        <svg width="24" height="24" viewBox="0 0 24 24"><rect fill="#F2F2F2" width="24" height="24" rx="3"></rect><path d="M12 18.69c-1.08 0-2.1-.25-2.99-.71L11.43 14c.24.06.4.08.56.08.92 0 1.67-.59 1.99-1.59h4.62c-.26 3.49-3.05 6.2-6.6 6.2zm-1.04-6.67c0-.57.48-1.02 1.03-1.02.57 0 1.05.45 1.05 1.02 0 .57-.47 1.03-1.05 1.03-.54.01-1.03-.46-1.03-1.03zM5.4 12c0-2.29 1.08-4.28 2.78-5.49l2.39 4.08c-.42.42-.64.91-.64 1.44 0 .52.21 1 .65 1.44l-2.44 4C6.47 16.26 5.4 14.27 5.4 12zm8.57-.49c-.33-.97-1.08-1.54-1.99-1.54-.16 0-.32.02-.57.08L9.04 5.99c.89-.44 1.89-.69 2.96-.69 3.56 0 6.36 2.72 6.59 6.21h-4.62zM12 19.8c.22 0 .42-.02.65-.04l.44.84c.08.18.25.27.47.24.21-.03.33-.17.36-.38l.14-.93c.41-.11.82-.27 1.21-.44l.69.61c.15.15.33.17.54.07.17-.1.24-.27.2-.48l-.2-.92c.35-.24.69-.52.99-.82l.86.36c.2.08.37.05.53-.14.14-.15.15-.34.03-.52l-.5-.8c.25-.35.45-.73.63-1.12l.95.05c.21.01.37-.09.44-.29.07-.2.01-.38-.16-.51l-.73-.58c.1-.4.19-.83.22-1.27l.89-.28c.2-.07.31-.22.31-.43s-.11-.35-.31-.42l-.89-.28c-.03-.44-.12-.86-.22-1.27l.73-.59c.16-.12.22-.29.16-.5-.07-.2-.23-.31-.44-.29l-.95.04c-.18-.4-.39-.77-.63-1.12l.5-.8c.12-.17.1-.36-.03-.51-.16-.18-.33-.22-.53-.14l-.86.35c-.31-.3-.65-.58-.99-.82l.2-.91c.03-.22-.03-.4-.2-.49-.18-.1-.34-.09-.48.01l-.74.66c-.39-.18-.8-.32-1.21-.43l-.14-.93a.426.426 0 00-.36-.39c-.22-.03-.39.05-.47.22l-.44.84-.43-.02h-.22c-.22 0-.42.01-.65.03l-.44-.84c-.08-.17-.25-.25-.48-.22-.2.03-.33.17-.36.39l-.13.88c-.42.12-.83.26-1.22.44l-.69-.61c-.15-.15-.33-.17-.53-.06-.18.09-.24.26-.2.49l.2.91c-.36.24-.7.52-1 .82l-.86-.35c-.19-.09-.37-.05-.52.13-.14.15-.16.34-.04.51l.5.8c-.25.35-.45.72-.64 1.12l-.94-.04c-.21-.01-.37.1-.44.3-.07.2-.02.38.16.5l.73.59c-.1.41-.19.83-.22 1.27l-.89.29c-.21.07-.31.21-.31.42 0 .22.1.36.31.43l.89.28c.03.44.1.87.22 1.27l-.73.58c-.17.12-.22.31-.16.51.07.2.23.31.44.29l.94-.05c.18.39.39.77.63 1.12l-.5.8c-.12.18-.1.37.04.52.16.18.33.22.52.14l.86-.36c.3.31.64.58.99.82l-.2.92c-.04.22.03.39.2.49.2.1.38.08.54-.07l.69-.61c.39.17.8.33 1.21.44l.13.93c.03.21.16.35.37.39.22.03.39-.06.47-.24l.44-.84c.23.02.44.04.66.04z" fill="#818b90"></path></svg>
+                        and select
+                        <strong>Linked Devices</strong>
+                      </li>
+                      <li class="intro-list">Open WhatsApp on your phone</li>
+                    </ol>
+                  </div>
+                  <div class="col-sm-12 bottom-0 mb-3">
+                    <a href="https://faq.whatsapp.com/web/download-and-installation/how-to-log-in-or-out?lang=en" class="into-help">Need help to get started?</a> &nbsp;
+                    <button class="btn btn-sm btn-success" (click)="login()">Login</button>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <img  width="100%" src="../assets/img/80875047.webp">
+                  <figcaption class="text-center into-fig-cap pt-3"><input type="checkbox" [(ngModel)]="signedMeIn"> Keep me signed in</figcaption>
+                </div>
+              </div>
+
+              <div class="row p-5 into-video-secn">
+                <div class="col-sm-12 text-center">
+<!--                  <video autoplay controls width="560px" height="314px" poster="https://web.whatsapp.com/img/qr-video_0c6ec69b054fdeb31cf3e5e10290fd8e.png">-->
+                  <video autoplay controls width="80%" height="100%">
+                    <source src="https://web.whatsapp.com/whatsapp-webclient-login_c09223f0813e7c3adc16476cba2a5d0d.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row inner-container" *ngIf="userStatus == userStatuses.ULG">
+  <div class="col-sm-12 logged-contents">
+    <div class="top-bg-data"></div>
+    <div class="sub-inner-content col-sm-12 col-lg-10 offset-lg-1 vh-100">
+      <div class="row vh-100">
+        <div class="col-sm-12 pt-lg-1-6 pb-lg-1-6 p-lg-10 h-100">
+          <div class="card h-100">
+            <div class="card-body h-100" #cardBody>
+              <div class="row h-100">
+
+<!--                //left side bar-->
+                <div class="col-4 user-list-sec">
+                  <div class="row header-section log-usr-nam-hdr">
+                    <div class="col-7">
+                      <button mat-icon-button ><svg viewBox="0 0 212 212" width="40px" height="40px" class=""><path fill="#DFE5E7" class="background" d="M106.251.5C164.653.5 212 47.846 212 106.25S164.653 212 106.25 212C47.846 212 .5 164.654.5 106.25S47.846.5 106.251.5z"></path><g fill="#FFF"><path class="primary" d="M173.561 171.615a62.767 62.767 0 0 0-2.065-2.955 67.7 67.7 0 0 0-2.608-3.299 70.112 70.112 0 0 0-3.184-3.527 71.097 71.097 0 0 0-5.924-5.47 72.458 72.458 0 0 0-10.204-7.026 75.2 75.2 0 0 0-5.98-3.055c-.062-.028-.118-.059-.18-.087-9.792-4.44-22.106-7.529-37.416-7.529s-27.624 3.089-37.416 7.529c-.338.153-.653.318-.985.474a75.37 75.37 0 0 0-6.229 3.298 72.589 72.589 0 0 0-9.15 6.395 71.243 71.243 0 0 0-5.924 5.47 70.064 70.064 0 0 0-3.184 3.527 67.142 67.142 0 0 0-2.609 3.299 63.292 63.292 0 0 0-2.065 2.955 56.33 56.33 0 0 0-1.447 2.324c-.033.056-.073.119-.104.174a47.92 47.92 0 0 0-1.07 1.926c-.559 1.068-.818 1.678-.818 1.678v.398c18.285 17.927 43.322 28.985 70.945 28.985 27.678 0 52.761-11.103 71.055-29.095v-.289s-.619-1.45-1.992-3.778a58.346 58.346 0 0 0-1.446-2.322zM106.002 125.5c2.645 0 5.212-.253 7.68-.737a38.272 38.272 0 0 0 3.624-.896 37.124 37.124 0 0 0 5.12-1.958 36.307 36.307 0 0 0 6.15-3.67 35.923 35.923 0 0 0 9.489-10.48 36.558 36.558 0 0 0 2.422-4.84 37.051 37.051 0 0 0 1.716-5.25c.299-1.208.542-2.443.725-3.701.275-1.887.417-3.827.417-5.811s-.142-3.925-.417-5.811a38.734 38.734 0 0 0-1.215-5.494 36.68 36.68 0 0 0-3.648-8.298 35.923 35.923 0 0 0-9.489-10.48 36.347 36.347 0 0 0-6.15-3.67 37.124 37.124 0 0 0-5.12-1.958 37.67 37.67 0 0 0-3.624-.896 39.875 39.875 0 0 0-7.68-.737c-21.162 0-37.345 16.183-37.345 37.345 0 21.159 16.183 37.342 37.345 37.342z"></path></g></svg></button>
+                    </div>
+                    <div class="col-5 text-center">
+                      <div class="row">
+                        <span class="col-4"><button mat-icon-button ><svg version="1.1" id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"></path><path fill="#009588" d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path></svg></button></span>
+                        <span class="col-4"><button mat-icon-button ><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z"></path></svg></button></span>
+                        <span class="col-4"><button mat-icon-button  [matMenuTriggerFor]="menu3"><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg></button></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 logged-not-sec" [ngClass]="{'networktrue': networkAvailable ? true : false, 'networkfalse' : networkAvailable ? false : true}">
+                      <div class="notiicsec cursor-pointer">
+                        <button mat-icon-button >
+                          <svg viewBox="0 0 48 48" *ngIf="networkAvailable" width="48" height="48" class=""><path fill="currentColor" d="M24.154 2C11.919 2 2 11.924 2 24.165S11.919 46.33 24.154 46.33s22.154-9.924 22.154-22.165S36.389 2 24.154 2zm-.744 15.428v-.618c0-.706.618-1.324 1.324-1.324s1.323.618 1.323 1.324v.618c2.559.618 4.412 2.823 4.412 5.559v3.176l-8.294-8.294a5.056 5.056 0 0 1 1.235-.441zm1.323 15.706a1.77 1.77 0 0 1-1.765-1.765h3.529a1.768 1.768 0 0 1-1.764 1.765zm7.236-.883-1.765-1.765H17.233v-.882l1.765-1.765v-4.853a5.56 5.56 0 0 1 .794-2.912l-2.559-2.559 1.147-1.147 14.735 14.736-1.146 1.147z"></path></svg>
+                          <svg viewBox="0 0 48 48" *ngIf="!networkAvailable" width="48" height="48" class=""><path fill="currentColor" d="M24.154 2C11.919 2 2 11.924 2 24.165S11.919 46.33 24.154 46.33s22.154-9.924 22.154-22.165S36.389 2 24.154 2zm-.169 32.138L12.976 19.459c3.028-2.294 6.881-3.67 11.009-3.67 4.129 0 7.982 1.376 11.009 3.67L23.985 34.138zm-.945-5.65h1.981v-1.981H23.04v1.981zm0-3.962h1.981v-5.017H23.04v5.017z"></path></svg>
+                        </button>
+                      </div>
+                      <div class="notiaccsec cursor-pointer">
+                        <span class="gnnm" *ngIf="networkAvailable">Get notified of new messages</span>
+                        <span class="todn" *ngIf="networkAvailable"><span class="todn">Turn on desktop notifications</span> <svg viewBox="0 0 8 12" width="8" height="12" class=""><path fill="currentColor" d="m2.173 1 4.584 4.725-4.615 4.615-1.103-1.103 3.512-3.512L1 2.173 2.173 1z"></path></svg></span>
+
+                        <span class="gnnm" *ngIf="!networkAvailable">Computer not connected</span>
+                        <span class="todn" *ngIf="!networkAvailable">Make sure your computer has an active Internet connection. </span>
+                        <span class="todn" *ngIf="!networkAvailable">Reconnect <svg viewBox="0 0 8 12" width="8" height="12" class=""><path fill="currentColor" d="m2.173 1 4.584 4.725-4.615 4.615-1.103-1.103 3.512-3.512L1 2.173 2.173 1z"></path></svg></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 searchinputgroup">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <svg viewBox="0 0 24 24" width="28" height="28" class=""><path fill="currentColor" d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z"></path></svg>
+                          </span>
+                        </div>
+                        <input type="text" placeholder="Search or start new chat">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row user-chat-list h-100">
+                    <div class="col-sm-12">
+                      <div class="row" *ngFor="let data of datalist" [ngStyle]="{backgroundColor: (data.selected) ? '#f0f2f5' : ''}">
+                          <app-notification-highlist [data]="data" (click)="selected(data)"></app-notification-highlist>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+<!--                // right side bar-->
+                <div class="col-8 text-content-area-header" #textContentAreaHeader [ngStyle]="{backgroundImage: (selectedMessage != null) ? 'url(\'../assets/img/bgi.png\')' : '', backgroundColor: (selectedMessage != null) ? '#efeae2' : '#f8f8f8', backgroundBlendMode: (selectedMessage != null) ? 'soft-light' : ''}">
+<!--                  // header setion-->
+                  <div class="row header-section" #headerSection *ngIf="selectedMessage != null">
+                    <div class="col-10 text-side">
+                      <div class="row heading-text-cont">
+                        <div class="col-12">
+                          <button mat-icon-button >
+                            <img [src]="selectedMessage.image" width="48" height="48" class="message-header-img">
+                          </button>
+                          <div class="heading-text">
+                            <div class="row">
+                              <div class="col-sm-12 heading-text-h"  >{{selectedMessage.header}}</div>
+                            </div>
+                            <div class="row heading-text-d">
+                              <div class="col-sm-12"  >{{(selectedMessage.isgroup) ? selectedMessage.groupusers : (selectedMessage.isonline) ? 'online' : ''}}</div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 text-right icons icon-side">
+                      <button mat-icon-button><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z"></path></svg></button>
+                      <button mat-icon-button><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg></button>
+                    </div>
+                  </div>
+
+<!--                  // message section-->
+                  <div class="row message-area" #messageArea *ngIf="selectedMessage != null" appFileupload (onFileDropped)="onFileDropped($event)">
+                    <app-message-row [message]="message" *ngFor="let message of selectedMessage.messageList"></app-message-row>
+                  </div>
+
+                  <div class="row footer-area" *ngIf="selectedMessage != null">
+                    <div class="col-sm-12 inner-col">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text send-message-icon-left ">
+                            <button mat-icon-button>
+                              <svg viewBox="0 0 24 24" width="24" height="24" class="ekdr8vow dhq51u3o"><path fill="currentColor" d="M9.153 11.603c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551 6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051 1.959c-3.505 0-5.388-1.164-5.607-1.959 0 0 5.912 1.055 10.658 0zM11.804 1.011C5.609 1.011.978 6.033.978 12.228s4.826 10.761 11.021 10.761S23.02 18.423 23.02 12.228c.001-6.195-5.021-11.217-11.216-11.217zM12 21.354c-5.273 0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001 5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z"></path></svg>
+                            </button>
+
+                            <button mat-icon-button>
+                              <svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z"></path></svg>
+                            </button>
+                          </span>
+                        </div>
+                        <textarea class="form-control type-message-area" placeholder="Type a message" [(ngModel)]="message" (keydown)="textFieldKeyPressed($event)"></textarea>
+                        <div class="input-group-append">
+                          <span class="input-group-text send-message-icon-right">
+                            <button mat-icon-button>
+                              <svg *ngIf="message && message.length > 0" viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M1.101 21.757 23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path></svg>
+                              <svg *ngIf="!message || message == null || message.length < 1"viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z"></path></svg>
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+
+
+
+                    </div>
+                  </div>
+
+<!--                  // empty message section-->
+                  <div class="row h-100 logged-empty-section" *ngIf="selectedMessage == null">
+                    <div class="col-sm-8 offset-sm-2 text-center h-100">
+                      <div class="col-sm-12 pt-5 pb-5">
+                        <img src="../assets/img/mobilelogo.jpg" width="356" height="355">
+                      </div>
+
+                      <div class="col-sm-12">
+                        <h1 class="kypc">Keep your phone connected</h1>
+                        <p  class="kypc-t">WhatsApp connects to your phone to sync messages. To reduce data usage, connect your phone to Wi-Fi.</p>
+                      </div>
+
+                      <div class="col-sm-12 mt-5 mcfdp">
+                        <p  class="mt-5">
+                          <svg viewBox="0 0 21 18" width="21" height="18" class=""><path fill="currentColor" d="M10.426 14.235a.767.767 0 0 1-.765-.765c0-.421.344-.765.765-.765s.765.344.765.765-.344.765-.765.765zM4.309 3.529h12.235v8.412H4.309V3.529zm12.235 9.942c.841 0 1.522-.688 1.522-1.529l.008-8.412c0-.842-.689-1.53-1.53-1.53H4.309c-.841 0-1.53.688-1.53 1.529v8.412c0 .841.688 1.529 1.529 1.529H1.25c0 .842.688 1.53 1.529 1.53h15.294c.841 0 1.529-.688 1.529-1.529h-3.058z"></path></svg>
+                          Make calls from desktop with WhatsApp for Windows. <a href="https://www.whatsapp.com/download" target="_blank">Get it here</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-menu #menu3="matMenu" xPosition="before">
+  <button mat-menu-item>
+    <span>New group</span>
+  </button>
+  <button mat-menu-item>
+    <span>Starred message</span>
+  </button>
+  <button mat-menu-item>
+    <span>Settings</span>
+  </button>
+  <button mat-menu-item>
+    <span>Log out</span>
+  </button>
+</mat-menu>

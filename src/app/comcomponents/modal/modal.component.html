@@ -1,0 +1,15 @@
+<mat-dialog-content>
+  <ng-container *ngIf="data && data.type == 'login'">
+    <app-login (closeModal)="closeModal()"></app-login>
+  </ng-container>
+
+
+  <ng-container *ngIf="data && data.type == 'register'">
+    <app-register></app-register>
+  </ng-container>
+
+  <ng-container *ngIf="data && data.type == 'forgotPassword'">
+    <app-forget-password></app-forget-password>
+  </ng-container>
+</mat-dialog-content>
+
